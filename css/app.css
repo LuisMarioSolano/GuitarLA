@@ -37,10 +37,19 @@ img {
     background-size: cover;
     background-position: 50%;
     padding: 5rem 0;
+    position: relative;
 }
 
 .header__guitarra {
     display: none;
+}
+@media (min-width : 768px) {
+    .header__guitarra {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 .header__barra {
     display: flex;
@@ -61,6 +70,8 @@ img {
     display: flex;
     gap: 2rem;
     margin-top: 5rem;
+    position: relative;
+    z-index: 1;
 }
 @media (min-width : 768px) {
     .navegacion {
@@ -85,6 +96,8 @@ img {
     color: var(--blanco);
     margin-top: 5rem;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 @media (min-width : 768px) {
     .modelo {
