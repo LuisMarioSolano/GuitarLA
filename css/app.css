@@ -32,6 +32,14 @@ img {
     width: 95%;
 }
 
+[class$="__heading"] {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 5rem auto;
+}
+
 .header {
     background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(../img/header.jpg);
     background-size: cover;
