@@ -235,6 +235,43 @@ img {
     color: var(--blanco);
 }
 
+
+.producto__label {
+    font-size: 2.2rem;
+    margin-right: 1rem;
+}
+
+.producto__cantidad {
+    border: 2px solid var(--primary);
+    padding: 1rem;
+}
+
+.producto__cantidad:focus-visible {
+    outline: 2px solid var(--primary);
+    border: none;
+}
+
+.producto__agregar-carrito {
+    margin-top: 6rem;
+    display: block;
+    background-color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    padding: 2rem 5rem;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.producto__agregar-carrito:hover {
+    cursor: pointer;
+    background-color: var(--negro);
+}
+
 .cursos {
     background-image: linear-gradient(to right, rgb(0 0 0 / .65), rgb(0 0 0 / .65)), url('../img/cursos_bg.jpg');
     padding: 10rem 0;
@@ -303,6 +340,7 @@ img {
     .blog__grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
     .blog__grid--pagina {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -312,6 +350,7 @@ img {
     max-width: 80rem;
     margin: 0 auto;
 }
+
 .entrada__contenido {
     padding: 2rem;
 }
@@ -360,29 +399,34 @@ img {
     background-color: var(--negro);
     padding: 5rem 0;
 }
+
 @media (min-width : 768px) {
     .footer__contenido {
         display: flex;
         justify-content: space-between;
     }
 }
+
 .footer__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 @media (min-width : 768px) {
     .footer__nav {
         flex-direction: row;
         gap: 2rem;
     }
 }
+
 .footer__enlace {
     font-size: 2.8rem;
     color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
 }
+
 .footer__enlace:hover {
     color: var(--primary);
 }
@@ -398,10 +442,10 @@ img {
     display: grid;
     gap: 4rem;
 }
+
 @media (min-width : 768px) {
     .nosotros__grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
 }
-
